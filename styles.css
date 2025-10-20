@@ -1,0 +1,114 @@
+/* Solo Leveling Inspired Blue-Dark Color Theme */
+:root {
+  --primary-color: #d0e7ff; /* Light blue for headings and text */
+  --background-color: #0a0f23; /* Very dark blue-black background */
+  --accent-color: #3a78c0; /* Vibrant blue accents for buttons, borders, highlights */
+}
+
+/* Custom Font from Google Fonts: 'Poppins' for headings, 'Open Sans' for body */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
+
+/* Global styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 20px;
+  color: var(--primary-color);
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  text-shadow: 0 0 6px var(--accent-color);
+}
+
+header {
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color);
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(58, 120, 192, 0.7);
+}
+
+img {
+  border: 4px solid var(--accent-color);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 10px 0 15px 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 15px var(--accent-color);
+}
+
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover, nav a:focus {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #121a3a 0%, #0a0f23 100%);
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(58, 120, 192, 0.2);
+}
+
+section {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 2px solid var(--accent-color);
+  border-radius: 12px;
+  background-color: #13204a;
+  box-shadow: 2px 2px 12px rgba(58, 120, 192, 0.3);
+}
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 50px;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1.5px solid var(--primary-color);
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
